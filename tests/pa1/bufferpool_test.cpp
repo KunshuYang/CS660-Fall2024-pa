@@ -1,4 +1,6 @@
 #include <gtest/gtest.h>
+#include <algorithm>
+#include <iterator>
 
 #include <db/Database.hpp>
 #include <db/DbFile.hpp>

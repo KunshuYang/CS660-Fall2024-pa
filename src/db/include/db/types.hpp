@@ -8,11 +8,12 @@
 namespace db {
 
 struct PageId {
-  std::string file;
-  size_t page;
+    std::string file;
+    size_t page;
 
-public:
-  bool operator==(const PageId &) const = default;
+    bool operator==(const PageId& other) const {
+        return file == other.file && page == other.page;
+    }
 };
 
 constexpr size_t DEFAULT_PAGE_SIZE = 4096;

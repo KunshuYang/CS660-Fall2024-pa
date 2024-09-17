@@ -8,3 +8,10 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 add_subdirectory(pa1)
+
+
+# 添加可执行文件
+add_executable(database_test database_test.cpp)
+
+# 链接 Google Test 库
+target_link_libraries(database_test gtest gtest_main)

@@ -1,5 +1,4 @@
 #include <gtest/gtest.h>
-
 #include <db/Database.hpp>
 #include <db/DbFile.hpp>
 
